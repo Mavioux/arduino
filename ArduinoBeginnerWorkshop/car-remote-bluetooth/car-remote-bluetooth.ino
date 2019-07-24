@@ -26,11 +26,7 @@ void loop() {
     
     c = Serial.read();
     
-    if(c == '\n') {
-      digitalWrite(in1, LOW);
-      digitalWrite(in2, LOW);
-      digitalWrite(in4, LOW);
-      digitalWrite(in3, LOW);   
+    if(c == '\n') {  
     }
     else {    
       if(c == 'w') {
@@ -44,33 +40,74 @@ void loop() {
         digitalWrite(in2, LOW);
         digitalWrite(in4, HIGH);
         digitalWrite(in3, LOW);
+
+        delay(100);
+
+        digitalWrite(in1, LOW);
+        digitalWrite(in2, LOW);
+        digitalWrite(in4, LOW);
+        digitalWrite(in3, LOW);
       }
       else if (c == 's') {
         digitalWrite(in1, LOW);
         digitalWrite(in2, HIGH);
         digitalWrite(in4, LOW);
         digitalWrite(in3, HIGH);
+
+        delay(100);
+
+        digitalWrite(in1, LOW);
+        digitalWrite(in2, LOW);
+        digitalWrite(in4, LOW);
+        digitalWrite(in3, LOW);
       }
       else if (c == 'd') {
         digitalWrite(in1, HIGH);
         digitalWrite(in2, LOW);
         digitalWrite(in4, LOW);
-        digitalWrite(in3, LOW);  
+        digitalWrite(in3, LOW); 
+
+        delay(100);
+
+        digitalWrite(in1, LOW);
+        digitalWrite(in2, LOW);
+        digitalWrite(in4, LOW);
+        digitalWrite(in3, LOW);
       }
       else if(c == 'z') {
         digitalWrite(in1, LOW);
         digitalWrite(in2, HIGH);
         digitalWrite(in4, HIGH);
         digitalWrite(in3, LOW); 
+
+        delay(100);
+
+        digitalWrite(in1, LOW);
+        digitalWrite(in2, LOW);
+        digitalWrite(in4, LOW);
+        digitalWrite(in3, LOW);
       }
       else if(c == 'x') {
         digitalWrite(in1, HIGH);
         digitalWrite(in2, LOW);
         digitalWrite(in4, LOW);
-        digitalWrite(in3, HIGH); 
+        digitalWrite(in3, HIGH);
+
+        delay(100);
+
+        digitalWrite(in1, LOW);
+        digitalWrite(in2, LOW);
+        digitalWrite(in4, LOW);
+        digitalWrite(in3, LOW);
+      }
+      else if (c == 'c') {
+        digitalWrite(in1, LOW);
+        digitalWrite(in2, LOW);
+        digitalWrite(in4, LOW);
+        digitalWrite(in3, LOW);  
       }
     
-      delay(1000);  
+       
     }
     
     
